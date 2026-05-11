@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsychBright Pages</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4ff;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #4a5ee8;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #888;
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+    .file-list {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .file-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid #f0f0f0;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+    .file-item:last-child { border-bottom: none; }
+    .file-item:hover { background: #f7f9ff; }
+    .file-name {
+      font-weight: 600;
+      color: #4a5ee8;
+    }
+    .file-desc {
+      font-size: 13px;
+      color: #888;
+      margin-top: 2px;
+    }
+    .arrow { color: #ccc; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PsychBright Pages</h1>
+    <p class="subtitle">All published HTML files</p>
+    <div class="file-list">
+      <a class="file-item" href="test.html">
+        <div>
+          <div class="file-name">test.html</div>
+          <div class="file-desc">PsychBright GitHub integration test</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
